@@ -31,7 +31,7 @@ throwaway_thread.Event:Connect(function()
 
         if curr_job then
             local text = curr_job[1]
-		    local color = curr_job[2]
+            local color = curr_job[2]
             local expiration = curr_job[3]
 
             if text and color and expiration then
