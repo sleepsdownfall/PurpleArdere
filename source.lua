@@ -66,7 +66,6 @@ end)
 
 throwaway_thread:Fire()
 throwaway_thread:Destroy()
-container.Parent:Destroy()
 
 return function(...)
     table.insert(job_queue, {...}) 
