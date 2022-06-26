@@ -35,6 +35,7 @@ throwaway_thread.Event:Connect(function()
             local color = curr_job[3]
 
             if text and expiration and color then
+		color = color or Color3.new(47, 32, 66)
                 local label = create('TextLabel', container, {
                     Name = math.random(),
                     AnchorPoint = Vector2.new(1, 1),
@@ -44,7 +45,7 @@ throwaway_thread.Event:Connect(function()
                     Font = Enum.Font.Code,
                     RichText = true,
                     Text = text,
-                    TextColor3 = color or Color3.new(47, 32, 66),
+                    TextColor3 = color,
                     TextSize = 16,
                     TextWrapped = true,
                     TextStrokeTransparency = 0,
