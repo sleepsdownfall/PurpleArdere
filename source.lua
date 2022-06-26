@@ -14,17 +14,18 @@ local function create(class, parent, properties)
 	return obj
 end
 
+local container = create('Frame', create('ScreenGui', gethui and gethui() or game:GetService('Players').LocalPlayer:WaitForChild('PlayerGui'),{
+    Name = math.random(),
+    ResetOnSpawn = false}
+), 
+    {Name = math.random(),
+    BackgroundTransparency = 1,
+    Position = UDim2.new(0, 0, 0, 0),
+    Size = UDim2.new(1, 0, 0, 100)
+})
+
 local throwaway_thread = Instance.new('BindableEvent')
 throwaway_thread.Event:Connect(function()
-    local container = create('Frame', create('ScreenGui', gethui and gethui() or game:GetService('Players').LocalPlayer:WaitForChild('PlayerGui'),{
-        Name = math.random(),
-        ResetOnSpawn = false}
-    ), 
-        {Name = math.random(),
-        BackgroundTransparency = 1,
-        Position = UDim2.new(0, 0, 0, 0),
-        Size = UDim2.new(1, 0, 0, 100)
-    })
     while true do
         local curr_job = job_queue[1]
 
