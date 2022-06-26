@@ -60,14 +60,12 @@ throwaway_thread.Event:Connect(function()
                     task.wait(1.25)
                     label:Destroy()
                 end)
-                
                 task.wait(0.35)
             end
         end
-
         task.wait()
+        container:Destroy()
     end
-    container:Destroy()
 end)
 
 throwaway_thread:Fire()
