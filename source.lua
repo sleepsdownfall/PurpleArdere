@@ -40,7 +40,7 @@ throwaway_thread.Event:Connect(function()
                     RichText = true,
                     Text = text,
                     TextColor3 = color,
-                    TextSize = 20,
+                    TextSize = 8,
                     TextWrapped = true,
                     TextStrokeTransparency = 0,
                 })
