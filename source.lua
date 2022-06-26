@@ -67,6 +67,7 @@ throwaway_thread.Event:Connect(function()
 
         task.wait()
     end
+    container:Destroy()
 end)
 
 throwaway_thread:Fire()
