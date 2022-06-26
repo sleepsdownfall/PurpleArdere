@@ -44,7 +44,7 @@ throwaway_thread.Event:Connect(function()
                     Font = Enum.Font.Code,
                     RichText = true,
                     Text = text,
-                    TextColor3 = color,
+                    TextColor3 = color or Color3.new(47, 32, 66),
                     TextSize = 16,
                     TextWrapped = true,
                     TextStrokeTransparency = 0,
