@@ -2,11 +2,9 @@
 -- Thanks network for allowing me to steal (https://github.com/networktraffic/blaze)
 local function create(class, parent, properties)
 	local obj = Instance.new(class, parent)
-	
 	for i, v in pairs(properties) do
 		obj[i] = v
 	end
-	
 	return obj
 end
 
