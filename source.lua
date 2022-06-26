@@ -31,10 +31,10 @@ throwaway_thread.Event:Connect(function()
 
         if curr_job then
             local text = curr_job[1]
-            local expiration = curr_job[2]
-            local color = curr_job[3]
+		    local color = curr_job[2]
+            local expiration = curr_job[3]
 
-            if text and expiration and color then
+            if text and color and expiration then
 		--color = Color3.new(color) or Color3.new(47, 32, 66)
                 local label = create('TextLabel', container, {
                     Name = math.random(),
