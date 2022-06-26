@@ -1,9 +1,5 @@
 -- Will edit later
 -- Thanks network for allowing me to steal (https://github.com/networktraffic/blaze)
-
-local job_queue = {}
-local Players = game:GetService('Players')
-
 local function create(class, parent, properties)
 	local obj = Instance.new(class, parent)
 	
@@ -24,6 +20,7 @@ local container = create('Frame', create('ScreenGui', gethui and gethui() or gam
     Size = UDim2.new(1, 0, 0, 100)
 })
 
+local job_queue = {}
 local throwaway_thread = Instance.new('BindableEvent')
 throwaway_thread.Event:Connect(function()
     while true do
