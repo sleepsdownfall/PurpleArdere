@@ -1,4 +1,4 @@
--- Will edit later
+-- Still pretty similar to network's blaze. Literally just changed how the code is formatted. May change soon.
 -- Thanks network for allowing me to steal (https://github.com/networktraffic/blaze)
 local function create(class, parent, properties)
 	local obj = Instance.new(class, parent)
@@ -68,3 +68,4 @@ throwaway_thread:Destroy()
 return function(...)
     table.insert(job_queue, {...}) 
 end
+-- PurpleArdere
