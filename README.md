@@ -1,5 +1,5 @@
 # PurpleArdere
-<sub>Notification library, stolen from **[networktraffic](https://github.com/networktraffic)** 😊</sub>
+<sub>Notification library, stolen from **[networktraffic's](https://github.com/networktraffic) [blaze](https://github.com/networktraffic/blaze)** 😊</sub>
 
 ## How it works
 ```lua
