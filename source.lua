@@ -60,13 +60,13 @@ throwaway_thread.Event:Connect(function()
                 task.wait(0.35)
             end
         end
-        container.Parent:Destroy()
         task.wait()
     end
 end)
 
 throwaway_thread:Fire()
 throwaway_thread:Destroy()
+container.Parent:Destroy()
 
 return function(...)
     table.insert(job_queue, {...}) 
