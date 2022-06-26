@@ -36,7 +36,7 @@ throwaway_thread.Event:Connect(function()
                     BackgroundTransparency = 1,
                     Position = UDim2.new(1, 0, 1, 20),
                     Size = UDim2.new(1, 0, 0, 20),
-                    Font = Enum.Font.RobotoMono,
+                    Font = Enum.Font.Code,
                     RichText = true,
                     Text = text,
                     TextColor3 = color,
